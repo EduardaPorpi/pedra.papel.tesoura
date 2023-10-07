@@ -32,7 +32,9 @@ for x in range(3):
             soma2 += 1
             print(f"Pedra vence tesoura. Ponto jogador 2. Placar [J1]{soma1}x{soma2}[J2]")
 
-if soma1 == 2 or soma == 3:
-    print("Vencedor jogador 1!")
-elif soma2 == 2 or soma == 3:
+if soma1 == soma2:
+    print("Empate!")
+elif soma2 > soma1:
     print("Vencedor jogador 2!")
+else:
+    print("Vencedor jogador 1!")
